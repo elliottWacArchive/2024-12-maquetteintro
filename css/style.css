@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --dark-grey: #464646;
+    --light-grey: #acacac;
+    --dark-white: #e0e0e0;
+    --orange: #e15200;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../img/grille.png");
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    line-height: 1.2em;
+    font-family: "Oswald","Droid Serif";
+    color: var(--dark-grey);
+}
+
+.sep {
+    background-color: var(--dark-white);
+    width: 100vw;
+    height: 1px;
+    margin: 15px 0px 30px 0px;
+}
+
+.sep-container {
+    background-color: white;
+}
+
+.sep-d {
+    background-color: var(--dark-white);
+    width: 100vw;
+    height: 1px;
+    margin: 30px 0px 15px 0px;
+}
+
+.header {
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar {
+    width: 50%;
+    display: flex;
+    /* background-color: red; */
+}
+
+.nav-container {
+    width: 50%;
+}
+
+.nav-separator {
+    width: 90%;
+    height: 7px;
+}
+
+.nav-text {
+    font-family: 'Droid Sans Regular';
+}
+
+.published {
+    font-family: 'Droid Serif Italic';
+    font-size: 0.6em; 
+    color: var(--light-grey);
+}
+
+.lireplus {
+    font-family: 'Droid Serif Italic';
+    font-size: 0.9em;
+    color: var(--light-grey);   
+}
+
+.lireplus:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav-separator.hotel {
+    background-color: var(--orange);
+}
+.nav-separator.restau {
+    background-color: orange;
+}
+.nav-separator.services {
+    background-color: rgb(118, 167, 96);
+}
+.nav-separator.activites {
+    background-color: rgb(108, 108, 196);
+}
+.nav-separator.plus {
+    background-color: rgb(187, 89, 187);
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.annotation {
+    width: calc(100% - 80px);
+    text-align: center;
+    padding: 40px;
+    font-family: 'Droid Serif Italic';
+    font-size: 1.2em;
+}
+
+.text {
+    font-family: 'Droid Sans Regular';
+    margin: 20px 0px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    width: calc(100% - 40px);
+    background-color: white;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+}
+
+.element {
+    width: 20%;
+    margin: 10px;
+}
+
+.element.golf {
+    border: 1px solid var(--light-grey);
+    width: 15%;
+    padding: 10px;
+}
+
+.incolumn {
+    width: 20%;
+    margin: 10px;
+}
+
+.inelement {
+    width: 100%;
+    height: 50%;
+}
+
+.img-grid {
+    width: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.img-grid img {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid var(--dark-white);
+    -webkit-box-shadow: 12px 11px 26px -7px rgba(0,0,0,0.63); 
+    box-shadow: 12px 11px 26px -7px rgba(0,0,0,0.63);
+}
+
+.title {
+    color: var(--orange);
+    font-size: 1.5em;
+    padding: 10px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: inherit;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-container {
+    padding: 20px;
+    width: 10%;
+}
+
+.footerr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+}
+
+.footer-txt {
+    font-family: "Droid Sans Regular";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.7em;
+    margin: 4px 0px;
+}
+
+.footer-title {
+    font-size: 1.1em;
+    margin: 10px 0px;
+}
+
+.footer-txt-title {
+    font-family: "Droid Sans Bold";
+    font-size: 0.8em;
+    margin: 4px 0px;
+}
+
+.footer-txt.com {
+    font-family: "Droid Serif Italic";
+    text-decoration: underline;
+}
+
+.text-presse, .text-copyright {
+    font-family: "Droid Sans Regular";
+    color: var(--light-grey);
+    font-size: 0.7em;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact img, .com, .nav-container {
+    cursor: pointer;
+}
+@font-face {
+    font-family: 'Droid Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Sans Regular'), url('../fonts/DroidSans.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Droid Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Droid Sans Bold'), url('../fonts/DroidSans-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Droid Serif';
+    src: local('Droid Serif'), url('../fonts/DroidSerif.ttf');
+}
+
+@font-face {
+    font-family: 'Droid Serif Italic';
+    src: url('Droid Serif Italic'), url('../fonts/DroidSerif-Italic.ttf');
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .nav-text {
+        display: none;
+    }
+    .nav-separator {
+        display: none;
+    }
+    .nav-title {
+        text-align: end;
+        width: 100%;
+    }
+    .nav-title.hotel {
+        background-color: var(--orange);
+    }
+    .nav-title.restau {
+        background-color: orange;
+    }
+    .nav-title.services {
+        background-color: rgb(118, 167, 96);
+    }
+    .nav-title.activites {
+        background-color: rgb(108, 108, 196);
+    }
+    .nav-title.plus {
+        background-color: rgb(187, 89, 187);
+    }
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-grid {
+        width: 100%;
+        grid-template-columns: 50% 50%;
+    }
+    .img-grid img {
+        width: 70%;
+    }
+    .element {
+        width: 80%;
+    }
+    .element.golf {
+        width: 80%;
+    }
+    .incolumn {
+        width: 80%;
+    }
+    .footer-txt {
+        display: none;
+    }
+    .footer-container {
+        width: fit-content;
+        padding: 1%;
+        font-size: 0.9em;
+    }
+    .footer-txt-title {
+        display: none;
+    }
+    .footer-title {
+        font-size: 2vw;
+    }
+    .published {
+        display: none;
+    }
+    .footer-info {
+        align-items: center;
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact img {
+        width: 10%;
+    }
+}
