@@ -272,13 +272,9 @@ body {
 
 
 @media (max-width: 768px) {
-    .header {
-        justify-content: space-between;
-    }
     .navbar {
         flex-direction: column;
         align-items: flex-end;
-        width: 100%;
     }
     .nav-text {
         display: none;
@@ -289,6 +285,7 @@ body {
     .nav-title {
         text-align: end;
         width: 100%;
+        font-size: 2vw;
     }
     .nav-title.hotel {
         background-color: var(--orange);
@@ -352,5 +349,9 @@ body {
     }
     .contact img {
         width: 10%;
+    }
+    .video iframe {
+        width: 50%;
+        height: 100%;
     }
 }
