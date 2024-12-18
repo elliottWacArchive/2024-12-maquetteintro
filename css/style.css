@@ -65,6 +65,11 @@ body {
 
 .nav-text {
     font-family: 'Droid Sans Regular';
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-text:hover {
+    transform: scale(1.1);
 }
 
 .published {
@@ -76,12 +81,20 @@ body {
 .lireplus {
     font-family: 'Droid Serif Italic';
     font-size: 0.9em;
-    color: var(--light-grey);   
+    color: var(--light-grey); 
 }
 
 .lireplus:hover {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: underline
+}
+
+.nav-title {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-title:hover {
+    transform: scale(1.2);
 }
 
 .nav-separator.hotel {
@@ -353,5 +366,8 @@ body {
     .video iframe {
         width: 50%;
         height: 100%;
+    }
+    .icon img {
+        width: 30vw;
     }
 }
